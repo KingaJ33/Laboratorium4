@@ -201,7 +201,7 @@ long long potega(int a, int b) {
 
 //ZAD.5
 
-
+int main (){}
 
 
 
