@@ -159,12 +159,47 @@ int main() {
 */
 
 //ZAD.4
+/*
+long long potega(int a, int b);
 
+int main() {
+    int a, b;
+    long long rezultat;
 
+    cout << "Podaj wartosc a " << endl;
+    cin >> a;
 
+    cout << "Podaj wartosc b " << endl;
+    cin >> b;
 
+    if (b < 0) {
+        cout << "Wykladnik (b) musi byc nieujemny." << endl;
+        return 1;
+    }
 
+    rezultat = potega(a, b);
 
+    cout << "Wynik dzialania " << a << "^" << b << " wynosi: " << rezultat << endl;
+
+    return 0;
+}
+
+long long potega(int a, int b) {
+    long long wynik = 1;
+
+    if (b == 0) {
+        return 1;
+    }
+
+    for (int i = 0; i < b; i++) {
+        wynik *= a;
+    }
+
+    return wynik;
+}
+*/
+
+//ZAD.5
 
 
 
