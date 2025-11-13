@@ -173,13 +173,13 @@ int main() {
     cin >> b;
 
     if (b < 0) {
-        cout << "Wykladnik (b) musi byc nieujemny." << endl;
+        cout << "Wartosc b musi byc dodatnia" << endl;
         return 1;
     }
 
     rezultat = potega(a, b);
 
-    cout << "Wynik dzialania " << a << "^" << b << " wynosi: " << rezultat << endl;
+    cout << "Wynik dzialania wynosi: " << rezultat << endl;
 
     return 0;
 }
@@ -200,8 +200,36 @@ long long potega(int a, int b) {
 */
 
 //ZAD.5
+/*
+int silnia(int n);
 
-int main (){}
+int main() {
+    int n;
+    cout << "Podaj liczbe naturalna " << endl;
+    cin >> n;
+
+    silnia(n);
+
+    cout << "silnia z " << n << " to " << silnia(n) << endl;
+
+    return 0;
+
+}
+
+int silnia(int n) {
+    int wynik = 1;
+
+    for (int i = 1; i <= n; i++) {
+        wynik = wynik * i;
+    } 
+
+    return wynik;
+}
+*/
+
+//ZAD.6
+
+
 
 
 
