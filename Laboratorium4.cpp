@@ -279,30 +279,87 @@ int main() {
 */
 
 //ZAD.7
-#include <cstdlib> 
+/*
+#include <cstdlib>
 #include <ctime>
 
 void numerek(int n);
 
 int main() {
-
     int n;
 
-    cout << "podaj szczesliwy numerek " << endl;
+    cout << "podaj szczesliwy numerek (1-10)" << endl;
     cin >> n;
-
-    numerek(n);
-
-
-    return 0; 
-}
-void numerek(int n) {
 
     srand(time(0));
 
+    numerek(n);
 
-
+    return 0;
 }
+
+void numerek(int n) {
+    const int LICZBA_LOSOWAN = 10;
+    const int MIN = 1;
+    const int MAX = 10;
+    double trafienia = 0;
+    double procent;
+
+    cout << "losuje 10 liczb dla numerka: " << n << endl;
+    cout << "wylosowane: ";
+
+    for (int i = 0; i < LICZBA_LOSOWAN; ++i) {
+        int wylosowana = rand() % (MAX - MIN + 1) + MIN;
+
+        cout << wylosowana << " ";
+
+        if (wylosowana == n) {
+            trafienia++;
+        }
+    }
+    cout << endl;
+
+    procent = (trafienia / LICZBA_LOSOWAN) * 100.0;
+
+    cout << "trafiles " << trafienia << " razy." << endl;
+    cout << "stanowi to: "  << procent << "% wszystkich wylosowanych liczb." << endl;
+}
+
+*/
+//ZAD.8
+/*
+int parzyste(int n);
+int nieparzyste(int n);
+
+int parzyste(int n) {
+    return n / 2;
+}
+
+int nieparzyste(int n) {
+    return (n - 1) / 2;
+}
+
+int main() {
+    const int LIMIT = 100;
+
+    cout << "--- Wyniki dzialania dla 100 kolejnych liczb ---" << endl;
+
+    for (int i = 1; i <= LIMIT; ++i) {
+        int wynik = 0;
+
+        if (i % 2 == 0) {
+            wynik = parzyste(i);
+            cout << "Liczba: " << i << " (Parzysta) -> Wynik: " << wynik << endl;
+        }
+        else {
+            wynik = nieparzyste(i);
+            cout << "Liczba: " << i << " (Nieparzysta) -> Wynik: " << wynik << endl;
+        }
+    }
+
+    return 0;
+}
+*/
 
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
