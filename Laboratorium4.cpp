@@ -192,7 +192,7 @@ long long potega(int a, int b) {
     }
 
     for (int i = 0; i < b; i++) {
-        wynik *= a;
+        wynik = wynik * a;
     }
 
     return wynik;
@@ -228,10 +228,81 @@ int silnia(int n) {
 */
 
 //ZAD.6
+// wersja 1.
+/*
+long long potega(int n);
+
+int main() {
+    int n;
+    cout << "podaj wykladnik potegi dla liczby 2" << endl;
+    cin >> n;
+
+    potega(n);
+
+    cout << "Wynik potegowania to " << potega(n) << endl;
+
+    return 0;
+}
+
+long long potega(int n) {
+   long long wynik = 1;
+
+   if (n == 0) {
+       return 1;
+   }
+   for (int i = 0; i < n; i++) {
+       
+       wynik = wynik * 2;
+   }
+
+   return wynik;
+   
+}
+*/
+// wersja 2.
+/*
+#include <cmath>
+
+int main() {
+    int n;
+    double wynik;
+
+    cout << "podaj wykladnik potegi dla liczby 2" << endl;
+    cin >> n;
+
+    wynik = pow(2.0, n);
+
+    cout << "Wynik 2 do potegi " << n << " wynosi: " << wynik << endl;
+
+    return 0;
+}
+*/
+
+//ZAD.7
+#include <cstdlib> 
+#include <ctime>
+
+void numerek(int n);
+
+int main() {
+
+    int n;
+
+    cout << "podaj szczesliwy numerek " << endl;
+    cin >> n;
+
+    numerek(n);
+
+
+    return 0; 
+}
+void numerek(int n) {
+
+    srand(time(0));
 
 
 
-
+}
 
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
